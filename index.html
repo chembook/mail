@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <title>马杰的邮箱</title>
+  <link rel="short icon" href="https://exmail.qq.com/exmail_logo.ico">
   <style>
     * {
       box-sizing: border-box;
@@ -17,12 +19,30 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      z-index: 0;
     }
 
     iframe {
       width: 100dvw;
       height: 100dvh;
       overflow: hidden;
+      z-index: 1;
+    }
+    .header {
+        width: 100dvw;
+        /* height: 10dvh; */
+        z-index: 2;
+        background-color: #d1d1d1;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 2dvh 20dvw;
+        font-weight: bolder;
+        font-size: 3dvh;
+        color: #2984ef;
+
     }
   </style>
 </head>
@@ -30,7 +50,7 @@
 <body>
 
   <iframe src="https://exmail.qq.com/login"></iframe>
-
+    <div class="header">企业邮箱</div>
 </body>
 
 </html>
