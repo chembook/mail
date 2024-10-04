@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -28,38 +27,51 @@
       overflow: hidden;
       z-index: 1;
     }
+
     .header {
-        width: 100dvw;
-        /* height: 10dvh; */
-        z-index: 2;
-        background-color: #FFFFFF;
-        position: absolute;
-        top: 0;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        padding: 2dvh 20dvw;
-        font-weight: bolder;
-        font-size: 22px;
-        color: #2984ef;
+      width: 100dvw;
+      /* height: 10dvh; */
+      z-index: 2;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      padding: 2dvh 20dvw;
+      font-weight: bolder;
+      font-size: 22px;
+
 
     }
-    .footer {
-        width: 100dvw;
-        /* height: 10dvh; */
-        z-index: 2;
-        background-color: #FFFFFF;
-        position: absolute;
-        bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2dvh 20dvw;
-        /* font-weight: bolder; */
-        font-size: 12px;
-        /* color: #2984ef; */
-        flex-direction: row;
 
+    .footer {
+      width: 100dvw;
+      /* height: 10dvh; */
+      z-index: 2;
+      background-color: #FFFFFF;
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2dvh 20dvw;
+      /* font-weight: bolder; */
+      font-size: 12px;
+      /* color: #2984ef; */
+      flex-direction: row;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    .header a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #2984ef;
     }
   </style>
 </head>
@@ -67,12 +79,17 @@
 <body>
 
   <iframe src="https://exmail.qq.com/login" scrolling="no"></iframe>
-    <div class="header">企业邮箱</div>
-    <div class="footer">
-      <a href="about.majie.me" target="_blank" title="关于我" style="cursor: pointer; margin-right: 10px;">关于</a>
-      <div title="网页框架内的页面属于腾讯企业邮箱所有" style="cursor: pointer; margin-right: 10px;">免责说明 </div>
-      ©2016 - 2024 <a href="majie.me" target="_blank" title="关于我" style="cursor: pointer; margin-right: 10px;">敛凝</a>.
-    </div>
+  <div class="header"><a href="https://mail.majie.me" target="_blank" title="腾讯企业邮箱" style="cursor: pointer;">企业邮箱</a>
+  </div>
+  <div class="footer">
+    <a href="https://majie.me/about" target="_blank" title="关于我" style="cursor: pointer; margin: 0 10px;">关于</a>
+    <a href="https://open.work.weixin.qq.com/help2/pc/14554?person_id=1" target="_blank" title="常见问题"
+      style="cursor: pointer; margin-right: 10px;">帮助</a>
+    <a href="https://wx.mail.qq.com" target="_blank" title="登录QQ邮箱"
+      style="cursor: pointer; margin-right: 10px;">个人微信邮箱</a>
+    <div title="网页框架内的页面属于腾讯企业邮箱所有" style="cursor: pointer; margin-right: 10px;">免责声明</div>
+    ©2016 - 2024 <a href="https://majie.me" target="_blank" title="关于我" style="cursor: pointer; margin: 0 10px;">敛凝</a>.
+  </div>
 
 </body>
 
