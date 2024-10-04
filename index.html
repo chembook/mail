@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>敛凝的邮箱</title>
   <link rel="short icon" href="https://exmail.qq.com/exmail_logo.ico">
-  <meta name="viewport" content="width=1024">
   <style>
     * {
       box-sizing: border-box;
@@ -75,6 +74,18 @@
       color: #2984ef;
     }
   </style>
+  <script>
+    function detectMobile() {
+        // 检测用户是否在移动设备上
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            // 显示提示
+            alert('为了更好的浏览体验，请尝试在浏览器设置中打开电脑模式。');
+        }
+    }
+
+    // 当文档加载完毕时检测
+    document.addEventListener('DOMContentLoaded', detectMobile);
+</script>
 </head>
 
 <body>
