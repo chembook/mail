@@ -74,65 +74,26 @@
       color: #2984ef;
     }
   </style>
-  <style>
-    /* 气泡通知样式 */
-    .notification {
-      visibility: hidden;
-      /* 默认隐藏 */
-      min-width: 250px;
-      margin-left: -125px;
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      border-radius: 5px;
-      padding: 10px;
-      position: fixed;
-      z-index: 3;
-      left: 50%;
-      bottom: 30px;
-      font-size: 16px;
-      opacity: 0;
-      transition: opacity 0.5s, visibility 0.5s;
-    }
-
-    /* 显示通知 */
-    .show {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
   <script>
-    function showNotification() {
-      // 检测是否为移动设备
-      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-      // 如果不是移动设备，则不执行任何操作
-      if (!isMobile) {
-        return;
-      }
-
-      var notification = document.getElementById('notification');
-      notification.classList.add('show');
-      setTimeout(function () {
-        notification.classList.remove('show');
-        redirectToMobileSite();
-      }, 3000); // 通知显示3秒后跳转
-    }
-
     function redirectToMobileSite() {
+      // 定义移动端要跳转到的URL
       var mobileUrl = 'https://exmail.qq.com/login';
+
+      // 检测用户是否在移动设备上
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+      // 如果是移动设备，则重定向
       if (isMobile) {
         window.location.href = mobileUrl;
       }
     }
 
-    document.addEventListener('DOMContentLoaded', showNotification);
+    // 当文档加载完毕时执行跳转函数
+    document.addEventListener('DOMContentLoaded', redirectToMobileSite);
   </script>
 </head>
 
 <body>
-  <div id="notification" class="notification">请打开浏览器的桌面模式继续浏览网页。</div>
   <iframe src="https://exmail.qq.com/login" scrolling="no"></iframe>
   <div class="header"><a href="https://mail.majie.me" target="_blank" title="腾讯企业邮箱" style="cursor: pointer;">企业邮箱</a>
   </div>
