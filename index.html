@@ -5,96 +5,14 @@
   <meta charset="utf-8">
   <title>敛凝的邮箱</title>
   <link rel="short icon" href="https://exmail.qq.com/exmail_logo.ico">
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-      border: none;
-    }
-
-    body {
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 0;
-    }
-
-    iframe {
-      width: 100dvw;
-      height: 100dvh;
-      overflow: hidden;
-      z-index: 1;
-    }
-
-    .header {
-      width: 100dvw;
-      /* height: 10dvh; */
-      z-index: 2;
-      background-color: #FFFFFF;
-      position: absolute;
-      top: 0;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      padding: 2dvh 20dvw;
-      font-weight: bolder;
-      font-size: 22px;
-
-
-    }
-
-    .footer {
-      width: 100dvw;
-      /* height: 10dvh; */
-      z-index: 2;
-      background-color: #FFFFFF;
-      position: absolute;
-      bottom: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 3.5dvh 20dvw;
-      /* font-weight: bolder; */
-      font-size: 12px;
-      /* color: #2984ef; */
-      flex-direction: row;
-    }
-
-    .footer a {
-      text-decoration: none;
-      color: black;
-      cursor: pointer;
-    }
-
-    .header a {
-      text-decoration: none;
-      cursor: pointer;
-      color: #2984ef;
-    }
-  </style>
-  <script>
-    function redirectToMobileSite() {
-      // 定义移动端要跳转到的URL
-      var mobileUrl = 'https://exmail.qq.com/login';
-
-      // 检测用户是否在移动设备上
-      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-      // 如果是移动设备，则重定向
-      if (isMobile) {
-        window.location.href = mobileUrl;
-      }
-    }
-
-    // 当文档加载完毕时执行跳转函数
-    document.addEventListener('DOMContentLoaded', redirectToMobileSite);
-  </script>
+  <script type="text/javascript">
+    window.location.href = "https://exmail.qq.com/login";
+</script>
 </head>
 
 <body>
-  <iframe src="https://exmail.qq.com/login" scrolling="no"></iframe>
+  <p>正在跳转到腾讯企业邮箱官网……</p>
+  <!-- <iframe src="https://exmail.qq.com/login" scrolling="no"></iframe>
   <div class="header"><a href="https://mail.majie.me" target="_blank" title="腾讯企业邮箱" style="cursor: pointer;">企业邮箱</a>
   </div>
   <div class="footer">
@@ -104,7 +22,7 @@
     <div title="网页框架内的页面属于腾讯企业邮箱所有" style="cursor: pointer; margin-right: 10px;">免责声明</div>
     <a href="https://wx.mail.qq.com" target="_blank" title="登录QQ邮箱"
       style="cursor: pointer; margin-right: 10px;">个人邮箱</a>
-    ©2016 - 2024 <a href="https://majie.me" target="_blank" title="关于我" style="cursor: pointer; margin: 0 10px;">敛凝.</a>
+    ©2016 - 2024 <a href="https://majie.me" target="_blank" title="关于我" style="cursor: pointer; margin: 0 10px;">敛凝.</a> -->
   </div>
 
 </body>
